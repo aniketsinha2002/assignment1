@@ -1,0 +1,293 @@
+:root {
+  --bg-color: #f9f9f9;
+  --primary-color: #f42f5b;
+  --secondary-color: #fc4a59;
+  --text-color: #333;
+  --light-text-color: #8d8d8d;
+  --dark-text-color: #010101;
+  --white-color: white;
+  --font-family: Arial, sans-serif;
+  --max-width: 450px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+/* Top Section */
+.top-section {
+  background-color: var(--primary-color);
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.adpushup-text {
+  font-size: 3.5vw;
+  color: var(--white-color);
+  margin-bottom: 40px;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.adpushup-desc {
+  font-size: 3.5vw;
+  color: var(--white-color);
+  font-weight: 700;
+  line-height: 1.3;
+  width: 40%;
+}
+
+.left-text {
+  margin-left: 60px;
+}
+
+.right-form {
+  position: fixed;
+  right: 130px;
+  top: 90px;
+}
+
+.form-container {
+  background-color: var(--white-color);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: var(--max-width);
+}
+
+.form-container h2 {
+  color: var(--secondary-color);
+  margin-bottom: 10px;
+  font-size: 2vw;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.submit-button {
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.5vw;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.submit-button:hover {
+  background-color: darkred;
+}
+
+.form-container a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+.form-container p {
+  padding: 10px 0;
+  color: var(--light-text-color);
+  font-size: 1vw;
+}
+
+.form-container a:hover {
+  text-decoration: underline;
+}
+
+.error-message {
+  color: red;
+  display: none;
+}
+.success-message {
+  color: green;
+  display: none;
+}
+.input-error {
+  border: 2px solid red;
+}
+
+/* Benefits Section */
+.benefits-section {
+  margin-left: 60px;
+  text-align: relative;
+  color: var(--white-color);
+  font-size: 1.7rem;
+}
+
+.benefits-section ul {
+  list-style: none;
+}
+
+.benefits-section li {
+  margin: 15px 0;
+}
+
+/* Membership Section */
+.container {
+  width: 50%;
+  margin-left: 60px;
+}
+
+.membership-section {
+  background-color: var(--white-color);
+  padding: 60px 50px;
+}
+
+.membership-section h2 {
+  font-size: 4rem;
+  text-align: center;
+  color: var(--dark-text-color);
+  margin-bottom: 30px;
+}
+
+.membership-section p {
+  color: var(--dark-text-color);
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.membership-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.membership-text {
+  flex: 1;
+  margin-right: 30px;
+}
+
+.membership-numbering {
+  background-color: var(--white-color);
+  color: var(--secondary-color);
+  padding: 0 10px;
+  border-radius: 80%;
+  border: 1px solid var(--secondary-color);
+  box-shadow: 1px bottom var(--secondary-color);
+}
+
+.membership-text h3 {
+  gap: 10px;
+  position: relative;
+  font-size: 2rem;
+  display: flex;
+  color: var(--secondary-color);
+  padding-bottom: 10px;
+}
+
+.membership-text p {
+  font-size: 1.8rem;
+  color: var(--dark-text-color);
+  width: 60%;
+}
+
+.membership-image img {
+  width: 50px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .adpushup-desc {
+    width: 100%;
+  }
+  .right-form {
+    position: relative;
+    margin-top: 20px;
+    right: 0;
+  }
+
+  .top-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-text {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .benefits-section {
+    font-size: 5vw;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .container {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .membership-item {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .membership-text {
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .membership-image img {
+    width: 80%;
+  }
+
+  /* Responsive Font Sizes */
+  .adpushup-text {
+    font-size: 10vw;
+  }
+
+  .adpushup-desc {
+    font-size: 8vw;
+  }
+
+  .form-container h2 {
+    font-size: 6vw;
+  }
+
+  .submit-button {
+    font-size: 3vw;
+  }
+
+  .form-container p {
+    font-size: 3vw;
+  }
+
+  .membership-section h2 {
+    font-size: 6vw;
+  }
+
+  .membership-text h3 {
+    font-size: 6vw;
+  }
+
+  .membership-text p {
+    font-size: 5vw;
+    width: 100%;
+  }
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: var(--bg-color);
+  color: var(--dark-text-color);
+}
